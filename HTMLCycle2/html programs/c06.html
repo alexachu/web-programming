@@ -1,0 +1,85 @@
+<html>
+<head>
+	<style>
+		body{
+			background-color: yellow;
+		}
+		.a h2{
+			background-color: gold;
+		}
+		.b label,input{
+			display: inline-block;margin-bottom: 20px;float: right;text-align: right;width: 70%;
+		}
+		input{
+			display: inline-block;float: right;
+		}
+		#a{
+			position: absolute;right: 780px;
+		}
+		#b{
+			position: absolute;right: 780px;
+		}
+		#c{
+			position: absolute;right: 780px;
+		}
+		#d{
+			position: absolute;right: 715px;
+		}
+		#g{
+			position: absolute;left: 550px;
+		}
+		#s{
+			position: absolute;top: 350px;left: 600px;
+		}
+		input[type="radio"]{
+			position: absolute;right: 260px;
+		}
+		.n{
+			width: 110px;height: 80px;overflow-y: scroll;position: absolute;top: 350px;left: 730px;text-align: left;
+		}
+		#t{
+			position: absolute;top: 450px;left: 600px;
+		}
+		input[type="checkbox"]{
+			position: absolute;top: 450px;left: 190px;
+		}
+		input[type="submit"]{
+			position: absolute;top: 500px;width: 60px;text-align: center;left: 725px;
+		}
+	</style>
+</head>
+<body>
+<div class="a">
+	<center><h2>The Word of Fruit</h2></center>
+</div>
+<div class="b">
+	<center><h2>Fruit Survey</h2></center>
+</div>
+<form name="b">
+<center>
+	<table>
+		<tr><td><label>Name</label><input type="text" name="fname"></td></tr>
+		<tr><td><label>Address</label><input type="text" name="Address"></td></tr>
+		<tr><td><label>Email</label><input type="Email" name="Email"></td></tr>
+	</table>
+	<label id="g">How many places of fruits<br>&nbspdo you eat per day?</label>
+	<input type="radio" name="radio" checked="checked"><label id="a">0</label><br>
+	<input type="radio" name="radio" checked="checked"><label id="b">1</label><br>
+	<input type="radio" name="radio" checked="checked"><label id="c">2</label><br>
+	<input type="radio" name="radio"><label id="d">more than2</label>
+	<label id="s">My favourite fruit</label>
+	<div class="n">
+		Apple<br>
+		Banana<br>
+		Plum<br>
+		Pomegrante<br>
+		Graphs<br>
+		Orange<br>
+	</div>
+	<label id="t">Would you like a<br>&nbspbrochure?</label>
+	<input type="checkbox" name="check">
+	<input type="submit" name="sub" value="submit">
+</center>
+</form>
+</body>
+</html>
