@@ -1,0 +1,22 @@
+<html>
+<head>
+	<script>
+		function rev()
+		{
+			var no,a,r=0,b;
+			no=Number(document.getElementById("n").value);
+			while(no>0)
+			{
+				a=no%10;
+				no=parseInt(no/10);
+				r=r*10+a;
+			}
+			alert(r);
+		}
+	</script>
+</head>
+<body>
+Enter the number:<input id="n"><br>
+<button onclick="rev()">submit</button>
+</body>
+</html>

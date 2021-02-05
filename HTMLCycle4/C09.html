@@ -1,0 +1,28 @@
+<html>
+<head>
+	<script>
+		function mul() 
+	    {
+	    	var no1,no2,no3;
+			no1=Number(document.getElementById('n1').value);
+			no2=Number(document.getElementById('n2').value);
+			no3=no1*no2;
+			alert(no3);
+		}
+		function div() 
+		{
+			var no1,no2,no3;
+			no1=Number(document.getElementById('n1').value);
+			no2=Number(document.getElementById('n2').value);
+			no3=no1/no2;
+			alert(no3);
+		}
+	</script>
+</head>
+<body>
+Enter the frist number:<input id="n1"><br>
+Enter the second number:<input id="n2"><br>
+<button onclick="mul()">multiple</button>
+<button onclick="div()">division</button>
+</body>
+</html>

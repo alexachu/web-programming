@@ -1,0 +1,30 @@
+<html>
+<head>
+	<script>
+		function arm() 
+		{
+			var a,b,no,sum=0;
+			no=Number(document.getElementById('n').value);
+			b=no;
+			while(no>0)
+			{
+				a=no%10;
+				sum=sum+a*a*a;
+				no=parseInt(no/10);
+			}
+			if (b==sum) 
+			{
+				alert("The Number is armstrong");
+			}
+			else
+			{
+				alert("The Number is not armstrong");
+			}
+		}
+	</script>
+</head>
+<body>
+Enter the value:<input id="n"><br>
+<button onclick="arm()">submit</button>
+</body>
+</html>
