@@ -1,0 +1,30 @@
+<html>
+<head>
+<script>
+	function back()
+		{
+			var name= prompt("Enter your name:","Name of the person");
+			var dob= prompt("Enter year of birth:","Year of birth");
+			var c=2021;
+			if((name!=null)&&(dob!=null))
+			{
+				document.write("Name of the person:",name);
+				document.write("\n");
+				var a=c-dob;																											
+				if(a>0)
+				{
+					document.write("Age of the person:",a);
+				}
+				else
+				{
+					document.write("check the given date of birth is correct");
+				}
+			}
+		}
+</script>
+</head>
+<body>
+<p>Add the personal details</p>
+<button onclick="back()">ADD</button>
+</body>
+</html>
