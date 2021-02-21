@@ -1,0 +1,24 @@
+<html>
+<head>
+	<script>
+		function back()
+		{
+			var word="hello";
+			var p="py";
+			if(word.indexOf(p)==0)
+			{
+				document.write(word);
+			}
+			else 
+			{
+				var v=p.concat(word);
+				document.write(v);
+			}
+		}
+	</script>
+</head>
+<body>
+<p>For join to strings.</p>
+<button onclick="back()">join</button>
+</body>
+</html> 
