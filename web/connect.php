@@ -2,10 +2,9 @@
 $servername="localhost";
 $username="20mca009";
 $password="2339";
-$conn=mysqli_connect($servername,$username,$password);
-if($conn)
-{
-echo "Connection succesfully";
+$dbname = "20mca009";
+$conn=mysqli_connect($servername,$username,$password,$dbname);
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
 }
-mysqli_close($conn);
 ?>
